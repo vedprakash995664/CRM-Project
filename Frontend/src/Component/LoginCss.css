@@ -1,0 +1,336 @@
+
+.outer {
+    height: 650px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #AFC2D1;
+}
+
+
+.inner {
+    height: 550px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+.inner-image {
+    height: 500px;
+    width: 80%;
+    background-color: #BECFE3;
+    border-radius: 20px;
+}
+
+.inner-image img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Form container */
+.inner-form {
+    height: 500px;
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.inner-form h1,
+.inner-form span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.inner-form h1 {
+    font-size: 32px;
+}
+
+.inner-form span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inner-form input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(207, 204, 204);
+    margin-top: 5px;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.signup-form {
+    padding-left: 50px;
+}
+
+.submit-btn,
+.Login-btn {
+    color: white !important;
+    width: 250px !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    border: 1px solid rgb(207, 204, 204) !important;
+}
+
+.Login-btn {
+    background-color: white !important;
+    color: black !important;
+    font-size: 15px !important;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Responsive styles */
+
+/* For foldable devices like Samsung Galaxy Z Fold 5 (when unfolded) */
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .inner {
+        width: 85%;
+    }
+
+    .inner-image {
+        height: 400px;
+        width: 70%;
+    }
+
+    .inner-form {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .inner-form h1 {
+        font-size: 28px;
+    }
+
+    .inner-form span {
+        font-size: 18px;
+    }
+
+    .inner-form input {
+        width: 80%;
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .submit-btn,
+    .Login-btn {
+        width: 80%;
+        font-size: 18px;
+        height: 45px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+}
+
+/* For Samsung Galaxy Z Fold 5 (in folded mode - cover screen) */
+@media (max-width: 768px) {
+    .inner {
+        width: 95%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .inner-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .inner-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .inner-form {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .inner-form h1 {
+        font-size: 28px;
+    }
+
+    .inner-form span {
+        font-size: 18px;
+    }
+
+    .inner-form input {
+        width: 90%;
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .submit-btn,
+    .Login-btn {
+        width: 90%;
+        font-size: 18px;
+        height: 45px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+}
+
+/* For smaller foldable screens like Galaxy Z Fold 5 (phone mode) */
+@media (max-width: 576px) {
+    .outer {
+        height: auto;
+        margin: 5px auto;
+    }
+
+    .inner {
+        height: auto;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .inner-image {
+        height: 200px;
+        width: 100%;
+    }
+
+    .inner-form {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .inner-form h1 {
+        font-size: 24px;
+    }
+
+    .inner-form span {
+        font-size: 16px;
+    }
+
+    .inner-form input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .submit-btn,
+    .Login-btn {
+        width: 100%;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}
+
+/* For extremely small screens (max-width: 400px) */
+@media (max-width: 400px) {
+    .outer {
+        height: auto;
+        padding: 5px;
+    }
+
+    .inner {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .inner-image {
+        height: 150px;
+        width: 100%;
+    }
+
+    .inner-form h1 {
+        font-size: 22px;
+    }
+
+    .inner-form span {
+        font-size: 14px;
+    }
+
+    .inner-form input {
+        font-size: 14px;
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    .submit-btn,
+    .Login-btn {
+        width: 100%;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 376px) {
+    .outer {
+        height: auto;
+        padding: 5px;
+    }
+
+    .inner {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .inner-image {
+        height: 150px;
+        width: 100%;
+    }
+
+    .inner-form h1 {
+        font-size: 22px;
+    }
+
+    .inner-form span {
+        font-size: 14px;
+    }
+
+    .inner-form input {
+        font-size: 14px;
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    .submit-btn,
+    .Login-btn {
+        width: 100% !important;
+        font-size: 14px;
+        height: 35px;
+        
+    }
+
+    label {
+        font-size: 14px;
+    }
+}

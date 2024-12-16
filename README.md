@@ -1,6 +1,11 @@
 # CRM-Project
 
 # create a login and SignUp and Dashboard for Admin ;
+ # for admin signUp 
+
+ # Collection name :- Admin_SignUp
+
+ # Fields :- Admin_Name, Admin_Email, Admin_Password;
 
 # Create a button on dashboard for add client and Search bar;
 
@@ -16,8 +21,3 @@
   <!-- Project_Title, Project_Description, assign_Date,End_date-->
 
 
- # for admin signup 
-
- # Collection name :- Admin_SignUp
-
- # Fields :- Admin_Name, Admin_Email, Admin_Password;
