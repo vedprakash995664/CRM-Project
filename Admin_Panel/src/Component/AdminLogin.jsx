@@ -25,7 +25,7 @@ const AdminLogin = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:4000/admin/admin_login',
+        'http://localhost:4000/admin/admin_login',  
         formData
       );
 
