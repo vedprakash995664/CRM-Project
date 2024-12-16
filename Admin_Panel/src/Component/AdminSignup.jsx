@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-const AdminSignup= () => {
-    const navigate = useNavigate(); 
+import './AdminSignupCSS.css'; // Importing the CSS file
+
+const AdminSignup = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,8 +31,7 @@ const AdminSignup= () => {
       );
 
       if (response.status === 201) {
-        navigate('/login')
-
+        navigate('/login');
         setFormData({ name: '', email: '', password: '' });
         setErrorMessage('');
       }
@@ -44,11 +45,11 @@ const AdminSignup= () => {
   };
 
   return (
-    <div className="container">
+    <div className="form-container">
       <h2>Admin Signup</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">name</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
@@ -82,7 +83,7 @@ const AdminSignup= () => {
         </div>
         <button type="submit">Sign Up</button>
       </form>
-      {errorMessage && <p id="error-message">{errorMessage}</p>}
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
     </div>
   );
 };
