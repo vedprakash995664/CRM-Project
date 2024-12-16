@@ -3,7 +3,7 @@
 # create a login and SignUp and Dashboard for Admin ;
  # for admin signUp 
 
- # Collection name :- Admin_SignUp
+ # Collection name :- Admin_SignUp  
 
  # Fields :- Admin_Name, Admin_Email, Admin_Password;
 
