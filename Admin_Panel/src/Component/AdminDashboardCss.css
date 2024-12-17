@@ -2,3 +2,33 @@
     margin: 0;
     padding: 0;
 }
+
+.dashboard-container {
+    /* display: flex; */
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Width of the sidebar */
+    width: calc(100% - 250px);
+    /* display: flex; */
+    flex-direction: column;
+  }
+  
+  .content-area {
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100%;
+  }
+  
+  .content-area h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+  }
+  
+  .content-area p {
+    font-size: 1em;
+    color: #555;
+  }
+  
